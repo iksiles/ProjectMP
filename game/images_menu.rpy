@@ -1,0 +1,5 @@
+image imagen_1 = "images\menu\menu1.jpg"
+image imagen_2 = "images\menu\menu2.jpg"
+image imagen_3 = "images\menu\menu3.jpg"
+image imagen_4 = "images\menu\menu4.jpg"
+image imagen_5 = "images\menu\menu5.jpg"
