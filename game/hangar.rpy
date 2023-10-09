@@ -12,6 +12,8 @@ image melvina sonr = "melvina/mevina son.png"
 image melvina surp = "melvina/mevina surp.png"
 image melvina susp = "melvina/mevina suspiro.png"
 image black = "#000"
+image shiranui_Second = "bg/shiranui_Second.png"
+image shiranui_SecondRED = "bg/shiranui_SecondRED.png"
 
 label hangar:
 
@@ -97,6 +99,8 @@ label hangar:
             
             a "Puedes decirme el Ranger. El capitán Walken comentó que mi identidad es restringida."
 
+            play music harmonious volume 0.5 loop
+
             show melvina happy4:
                     zoom 1.0
                     ypos 100
@@ -143,12 +147,45 @@ label hangar:
 
             a "Sí... Lo voy a sacar a pasear entonces... Hace un año que no vuelo un TSF."
 
+            show melvina happy:
+                    zoom 1.0
+                    ypos 100
+                    xpos 200
+
+            a "(Con todo lo que ha pasado la verdad me llega a sorprender que me dejen pilotar de la nada un Raptor... Los rangers somos... eramos muy buenos en Eagles y Falcons, pero esto es un gran salto.)"
+            
             m "Ohh... Quizá debas pasar por simulador entonces jujuju."
 
             a "Ni en broma. La mejor prueba es la real."
 
+            a "(Y perderme esta oportunidad. Nadie sería tan tonto de evitar probar el grandioso F-22A Raptor, ingenieria estadounidense de calidad.)"
+
+            a "(Quizá me estoy emocionando de mas...)"
+
+            show melvina plm:
+                    zoom 1.0
+                    ypos 100
+                    xpos 200
+
+            m """Por toda tu cara se puede leer "Dejarme pilotar esta preciosidad" jajajaja."""
+
+            a "Dificil ocultar la emoción de pilotar un top TSF del mundo... (Aunque es lo unico por lo que ahora me esta sacando una sonrisa.)"
+
         "Los japoneses.":
             a "Que hacen en Fort Lewis un par de japoneses..."
+
+            "Lentamente y con cuidado te acercas a uno de los puestos de TSF japoneses... Habian desde Shiranui de primera generación, en su caracteristico color negro, pero los que habian despues..."
+
+            scene shiranui_SecondRED with dissolve:
+                zoom 1.25
+
+            a "(Nunca vi un Shiranui así... Su presencia irradia... Ira, furia.)"
+
+            a "(Noto partes del Shiranui pero es mucho mas avanzado. El hecho de que esté aquí indica que los japoneses y los americanos sí que tienen una relación bastante estrecha y sin embargo... Ahora mismo me siento un extraño.)"
+
+            "Te apoyas en una de las barandillas para ver con cuidado ese extraño Shiranui."
+
+            a "El desarrollo de esto tuvo que ser acojonante... Me pregunto como será que se enfrente a los Raptor..."
 
         "Exit":
             return
